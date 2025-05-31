@@ -33,3 +33,6 @@ build/
 .vscode/
 
 /unwanted/
+/DummyJSON-master/
+.zip
+DummyJSON-master.zip

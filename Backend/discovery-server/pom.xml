@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.urbanecart</groupId>
-	<artifactId>Discovery Server</artifactId>
+	<artifactId>discovery-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Discovery-Server</name>
 	<description>this is Product service use to manage products</description>
