@@ -1,8 +1,10 @@
 package in.urbanecart.products.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -11,6 +13,8 @@ import java.util.List;
 @Data
 @Entity
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Product {
 
     @Id
@@ -20,7 +24,10 @@ public class Product {
     private String title;
     @Column(length = 2000)
     private String description;
-    private String category;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
     private String brand;
     private String sku;
 
